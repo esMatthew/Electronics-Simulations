@@ -1,0 +1,8 @@
+.subckt my_dc_motor 1 2 3
+R1 1 4 0.5
+L1 4 5 0.001
+B1 5 2 V=V(3)*0.0229
+B2 0 3 I=I(B1)*0.0229
+Cj 3 0 1
+Rf 3 0 0.01
+.ends my_dc_motor

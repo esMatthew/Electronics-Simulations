@@ -1,0 +1,10 @@
+clear; close all; clc;
+
+% Datos experimentales
+
+Q = 80;
+P = 350;
+Qprima = -Q;
+
+Vrms = 127;
+

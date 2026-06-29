@@ -1,0 +1,13 @@
+clear; close all; clc;
+
+rawTable = readtable('Mediciones Lab 2.xlsx','Sheet','Sheet1');
+x = rawTable.Rload_Ohm_;
+y = rawTable.Pload_Watts_;
+
+% Display
+figure;
+plot(x,y);
+grid on;
+xlabel('Resistance (Ohms)');
+ylabel('Power (Watts)');
+title('Power vs Resistance');
